@@ -1,3 +1,3 @@
-# Dot files
+# Dot-Files
 
-This is a little repository with my dot-files.
+This repository is where I save my dotfiles for my different environment.
