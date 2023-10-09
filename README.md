@@ -16,7 +16,7 @@ Following We can several command for build and move the folder. Here I will buil
     cd ./dotter
     git checkout tags/v0.13.0
     cargo build --release
-    sudo mv ./target/release/dotter /usr/sbin/dotter
+    sudo mv ./target/release/dotter /usr/local/bin/dotter
 ```
 
 The best practises are clone this repository in *~/.dotfiles*, I have my dotfiles in this folder and the setting of the tool is inside of *~/.dotfiles/.dotter*
