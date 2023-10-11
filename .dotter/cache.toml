@@ -2,3 +2,5 @@
 "bash/alias.zsh" = "/home/ajsobrino/.config/zsh/alias.zsh"
 
 [templates]
+zprofile = "/home/ajsobrino/.fuck"
+zshrc = "/home/ajsobrino/.zshrc"

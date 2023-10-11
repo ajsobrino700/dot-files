@@ -4,5 +4,8 @@
 depends = []
 
 [zsh.files]
-
 "bash/alias.zsh" = "~/.config/zsh/alias.zsh"
+zshrc="~/.zshrc"
+
+[zsh.variables]
+"aliasFile"="~/.config/zsh/alias.zsh"
