@@ -1,4 +1,4 @@
-#Dot-Files
+# Dot-Files
 
 This repository is where I save my dotfiles for my different environment.
 
@@ -7,7 +7,7 @@ With this tool you can deploy the setting by enviroment, with variables, templat
 
 The link of repository is [dotter repository](https://github.com/SuperCuber/dotter) and the official [documentation](https://github.com/SuperCuber/dotter/wiki).
 
-## Installation
+## Installation
 
 There are several option to install this sofware (download a binary files, manager package like *scoop* in windows). In my case I use *Rust* in some personal project therefore I prefer clone the code of repository and build the project. When I have the binary file I move the file to the path.
 Following We can several command for build and move the folder. Here I will build the last version.
