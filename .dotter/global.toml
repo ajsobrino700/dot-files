@@ -1,8 +1,8 @@
 [helpers]
 
-[default]
+[zsh]
 depends = []
 
-[default.files]
+[zsh.files]
 
-[default.variables]
+"bash/alias.zsh" = "~/.config/zsh/alias.zsh"

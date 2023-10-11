@@ -20,3 +20,5 @@ Following We can several command for build and move the folder. Here I will buil
 ```
 
 The best practises are clone this repository in *~/.dotfiles*, I have my dotfiles in this folder and the setting of the tool is inside of *~/.dotfiles/.dotter*
+
+There is two things very important. The local and cache files must be ignored. Also We can define several packages in the globals setting and I could even include a setting file. But the configuration that will deploy is the **local.toml**

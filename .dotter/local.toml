@@ -1,6 +1,5 @@
 includes = []
-git pull tags/
-packages = ["default"]
+packages = ["zsh"]
 
 [files]
 
