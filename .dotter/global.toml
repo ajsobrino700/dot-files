@@ -5,7 +5,15 @@ depends = []
 
 [zsh.files]
 "bash/alias.zsh" = "~/.config/zsh/alias.zsh"
+"bash/terminal.zsh" = "~/.config/zsh/terminal.zsh"
 zshrc="~/.zshrc"
 
 [zsh.variables]
 "aliasFile"="~/.config/zsh/alias.zsh"
+"terminalFile"="~/.config/zsh/terminal.zsh"
+
+[nvim]
+depends = ["zsh"]
+
+[nvim.files]
+"nvim/init.lua" = "~/.config/nvim/init.lua"
