@@ -1,0 +1,7 @@
+[user]
+	email = ajsobrino700@gmail.com
+	name = ajsobrino
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main

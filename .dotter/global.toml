@@ -17,3 +17,9 @@ depends = ["zsh"]
 
 [nvim.files]
 "nvim/init.lua" = "~/.config/nvim/init.lua"
+
+[git]
+depends = ["zsh"]
+
+[git.files]
+"gitconfig" = "~/.gitconfig"
