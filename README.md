@@ -27,5 +27,6 @@ There is two things very important. The local and cache files must be ignored. A
 
 There is some alias or command that depends of other third party sofware. I list the information relationship with this tool and command.
 
-- [lsd](https://github.com/lsd-rs/lsd)
-- [bat](https://github.com/sharkdp/bat)
+- [lsd](https://github.com/lsd-rs/lsd).
+- [bat](https://github.com/sharkdp/bat).
+- [neovim](https://neovim.io/), recently version (It is mandatory to support lua setting).
