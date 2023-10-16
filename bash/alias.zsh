@@ -14,4 +14,5 @@ alias dot="dotter"
 alias nv="nvim"
 
 ## Important folder alias
-alias config="~/.config"
+alias config="cd ~/.config"
+alias dotfile="cd ~/.dotfiles"

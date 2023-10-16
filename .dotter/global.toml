@@ -16,6 +16,8 @@ zshrc="~/.zshrc"
 depends = ["zsh"]
 
 [nvim.files]
+"nvim/settings/lazy.lua" = "~/.config/nvim/lua/settings/lazy.lua"
+"nvim/plugins/colorscheme.lua" = "~/.config/nvim/lua/plugins/colorscheme.lua"
 "nvim/init.lua" = "~/.config/nvim/init.lua"
 
 [git]
