@@ -5,11 +5,13 @@ depends = []
 
 [zsh.files]
 "bash/alias.zsh" = "~/.config/zsh/alias.zsh"
+"bash/environment_variables.zsh"="~/.config/zsh/environment_variables.zsh"
 "bash/terminal.zsh" = "~/.config/zsh/terminal.zsh"
 zshrc="~/.zshrc"
 
 [zsh.variables]
 "aliasFile"="~/.config/zsh/alias.zsh"
+"environmentVariablesFile"="~/.config/zsh/environment_variables.zsh"
 "terminalFile"="~/.config/zsh/terminal.zsh"
 
 [nvim]
