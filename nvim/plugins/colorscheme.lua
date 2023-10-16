@@ -1,5 +1,7 @@
 return { 
-	"ellisonleao/gruvbox.nvim",
+	"folke/tokyonight.nvim",
 	priority = 1000 ,
-	config = truea
+	config = function()
+		vim.cmd("colorscheme tokyonight-storm")	
+	end
 }
