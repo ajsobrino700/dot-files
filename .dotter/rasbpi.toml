@@ -3,8 +3,8 @@
 depends = []
 
 [zsh.files]
-"bash/alias.zsh"= { target="~/.config/zsh/alias.zsh" , type="template", append="""
+"zsh/alias.zsh"= { target="~/.config/zsh/alias.zsh" , type="template", append="""
 
 #Docker alias
-alias dc="docker compose"
+alias dockerc="docker compose"
 """}

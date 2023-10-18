@@ -4,9 +4,9 @@
 depends = []
 
 [zsh.files]
-"bash/alias.zsh" = "~/.config/zsh/alias.zsh"
-"bash/environment_variables.zsh"="~/.config/zsh/environment_variables.zsh"
-"bash/terminal.zsh" = "~/.config/zsh/terminal.zsh"
+"zsh/alias.zsh" = "~/.config/zsh/alias.zsh"
+"zsh/environment_variables.zsh"="~/.config/zsh/environment_variables.zsh"
+"zsh/terminal.zsh" = "~/.config/zsh/terminal.zsh"
 zshrc="~/.zshrc"
 
 [zsh.variables]
