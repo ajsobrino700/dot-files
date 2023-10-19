@@ -21,6 +21,7 @@ depends = ["zsh"]
 "nvim/settings/basic_settings.lua" = "~/.config/nvim/lua/settings/basic_settings.lua"
 "nvim/settings/lazy.lua" = "~/.config/nvim/lua/settings/lazy.lua"
 "nvim/plugins/colorscheme.lua" = "~/.config/nvim/lua/plugins/colorscheme.lua"
+"nvim/plugins/ident-blankline.lua" = "~/.config/nvim/lua/plugins/ident-blankline.lua"
 "nvim/init.lua" = "~/.config/nvim/init.lua"
 
 [git]
