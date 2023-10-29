@@ -10,9 +10,9 @@ depends = []
 zshrc="~/.zshrc"
 
 [zsh.variables]
-"aliasFile"="~/.config/zsh/alias.zsh"
-"environmentVariablesFile"="~/.config/zsh/environment_variables.zsh"
-"terminalFile"="~/.config/zsh/terminal.zsh"
+"aliasFile"="${HOME}/.config/zsh/alias.zsh"
+"environmentVariablesFile"="${HOME}/.config/zsh/environment_variables.zsh"
+"terminalFile"="${HOME}/.config/zsh/terminal.zsh"
 
 [nvim]
 depends = ["zsh"]
@@ -20,8 +20,14 @@ depends = ["zsh"]
 [nvim.files]
 "nvim/settings/basic_settings.lua" = "~/.config/nvim/lua/settings/basic_settings.lua"
 "nvim/settings/lazy.lua" = "~/.config/nvim/lua/settings/lazy.lua"
+"nvim/settings/remap.lua" = "~/.config/nvim/lua/settings/remap.lua"
+
 "nvim/plugins/colorscheme.lua" = "~/.config/nvim/lua/plugins/colorscheme.lua"
-"nvim/plugins/ident-blankline.lua" = "~/.config/nvim/lua/plugins/ident-blankline.lua"
+"nvim/plugins/barbar.lua" = "~/.config/nvim/lua/plugins/barbar.lua"
+"nvim/plugins/indent-blankline.lua" = "~/.config/nvim/lua/plugins/indent-blankline.lua"
+"nvim/plugins/nvim-tree.lua" = "~/.config/nvim/lua/plugins/nvim-tree.lua"
+"nvim/plugins/telescope.lua" = "~/.config/nvim/lua/plugins/telescope.lua"
+
 "nvim/init.lua" = "~/.config/nvim/init.lua"
 
 [git]
