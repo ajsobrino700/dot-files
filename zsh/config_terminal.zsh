@@ -22,8 +22,15 @@ HISTSIZE=1000
 SAVESIZE=1000
 HISTFILE="~/.zsh_history"
 
-autoload -Uz promptinit
-promptinit
-prompt adam1
-
 setopt histignorealldups sharehistory
+
+
+# Prompt
+local PROMPT_FILE="${HOME}/.config/zsh/terminal/prompt.zsh"
+if [ -f "${PROMPT_FILE}" ]; then
+    source "${PROMPT_FILE}"
+else
+    autoload -Uz promptinit
+    promptinit
+    prompt adam1
+fi

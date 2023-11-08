@@ -6,13 +6,14 @@ depends = []
 [zsh.files]
 "zsh/alias.zsh" = "~/.config/zsh/alias.zsh"
 "zsh/environment_variables.zsh"="~/.config/zsh/environment_variables.zsh"
-"zsh/terminal.zsh" = "~/.config/zsh/terminal.zsh"
+"zsh/config_terminal.zsh" = "~/.config/zsh/config_terminal.zsh"
+"zsh/terminal/prompt.zsh" = "~/.config/zsh/terminal/prompt.zsh"
 zshrc="~/.zshrc"
 
 [zsh.variables]
 "aliasFile"="${HOME}/.config/zsh/alias.zsh"
 "environmentVariablesFile"="${HOME}/.config/zsh/environment_variables.zsh"
-"terminalFile"="${HOME}/.config/zsh/terminal.zsh"
+"terminalFile"="${HOME}/.config/zsh/config_terminal.zsh"
 
 [nvim]
 depends = ["zsh"]
@@ -27,6 +28,8 @@ depends = ["zsh"]
 "nvim/plugins/indent-blankline.lua" = "~/.config/nvim/lua/plugins/indent-blankline.lua"
 "nvim/plugins/nvim-tree.lua" = "~/.config/nvim/lua/plugins/nvim-tree.lua"
 "nvim/plugins/telescope.lua" = "~/.config/nvim/lua/plugins/telescope.lua"
+"nvim/plugins/lsp-server.lua" = "~/.config/nvim/lua/plugins/lsp-server.lua"
+"nvim/plugins/lsp-config.lua" = "~/.config/nvim/lua/plugins/lsp-config.lua"
 
 "nvim/init.lua" = "~/.config/nvim/init.lua"
 
