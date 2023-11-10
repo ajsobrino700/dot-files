@@ -6,5 +6,6 @@ depends = []
 "zsh/alias.zsh"= { target="~/.config/zsh/alias.zsh" , type="template", append="""
 
 #Docker alias
-alias dockercom="docker compose"
+alias dk="docker"
+alias dkc="docker compose"
 """}

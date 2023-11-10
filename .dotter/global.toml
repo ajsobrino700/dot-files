@@ -30,6 +30,7 @@ depends = ["zsh"]
 "nvim/plugins/telescope.lua" = "~/.config/nvim/lua/plugins/telescope.lua"
 "nvim/plugins/lsp-server.lua" = "~/.config/nvim/lua/plugins/lsp-server.lua"
 "nvim/plugins/lsp-config.lua" = "~/.config/nvim/lua/plugins/lsp-config.lua"
+"nvim/plugins/feline.lua" = "~/.config/nvim/lua/plugins/feline.lua" 
 
 "nvim/init.lua" = "~/.config/nvim/init.lua"
 
