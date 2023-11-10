@@ -32,6 +32,10 @@ function git_status(){
   git status -s 2> /dev/null
 }
 
+function pending_push {
+    git diff --stat --cached "origin/${1}"
+}
+
 function git_prompt {
     changes=$(git_status)
     typeset -g status_prompt=""
@@ -39,8 +43,13 @@ function git_prompt {
         numbers=$(echo "${changes}" | wc -l)
         status_prompt="%F{1} ${numbers}"
     fi
+    
+    typeset -g push=""
+    if [ -n "$(pending_push ${1})" ]; then
+        push=" ="
+    fi
 
-    echo "%F{reset_color}on %F{213}\ue0a0 ${1}${status_prompt}"
+    echo "%F{reset_color}on %F{213}\ue0a0 ${1}${status_prompt}${push}"
 }
 
 
@@ -54,4 +63,4 @@ local first_line='%F{215}%m %F{208}${icon_so} %~ $(branch=$(parse_git_branch); i
 
 PROMPT="$first_line $prompt_newline${second_line}%F{reset_color}"
 
-RPROMPT='%(?.✅.❌) %D{%H:%M:%S}'
+RPROMPT='%(?.✅.❌) 🕒 %D{%H:%M:%S}'
