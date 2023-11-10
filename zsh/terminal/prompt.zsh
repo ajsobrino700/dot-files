@@ -33,7 +33,7 @@ function git_status(){
 }
 
 function pending_push {
-    git diff --stat --cached "origin/${1}"
+    git diff --stat --cached "origin/${1}" 2> /dev/null
 }
 
 function git_prompt {
@@ -43,13 +43,8 @@ function git_prompt {
         numbers=$(echo "${changes}" | wc -l)
         status_prompt="%F{1} ${numbers}"
     fi
-    
-    typeset -g push=""
-    if [ -n "$(pending_push ${1})" ]; then
-        push=" ="
-    fi
 
-    echo "%F{reset_color}on %F{213}\ue0a0 ${1}${status_prompt}${push}"
+    echo "%F{reset_color}on %F{213}\ue0a0 ${1}${status_prompt}"
 }
 
 
