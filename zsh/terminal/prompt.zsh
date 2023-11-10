@@ -21,11 +21,37 @@ get_icon_so(){
 
 icon_so=$(get_icon_so) 
 
+
+# The color is x-term256 the information is on environment varibale TERM
+function parse_git_branch() {
+	result=$(git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/\1/p')
+	echo $result
+}
+
+function git_status(){
+  git status -s 2> /dev/null
+}
+
+function git_prompt {
+    changes=$(git_status)
+    typeset -g status_prompt=""
+    if [ -n "${changes}" ]; then
+        numbers=$(echo "${changes}" | wc -l)
+        status_prompt="%F{1} ${numbers}"
+    fi
+
+    echo "%F{reset_color}on %F{213}\ue0a0 ${1}${status_prompt}"
+}
+
+
 local second_line_error="%F{196}%# %F{202}>%F{216}>%F{230}> "
 local second_line_well="%F{40}%# %F{77}>%F{156}>%F{230}> "
 
-local second_line="%(?.${second_line_well}.${second_line_error})"
 
-PROMPT="%F{215}%m %F{208}${icon_so} %~$prompt_newline${second_line}%F{reset_color}"
+
+local second_line="%(?.${second_line_well}.${second_line_error})"
+local first_line='%F{215}%m %F{208}${icon_so} %~ $(branch=$(parse_git_branch); if [ -n "${branch}" ]; then git_prompt "${branch}";fi;)'
+
+PROMPT="$first_line $prompt_newline${second_line}%F{reset_color}"
 
 RPROMPT='%(?.✅.❌) %D{%H:%M:%S}'
