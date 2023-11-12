@@ -15,6 +15,7 @@ return {
         vim.keymap.set('n','K',vim.lsp.buf.hover, { buffer = buffnr})
     end
 
+
 	require("neodev").setup()
 	require("lspconfig").lua_ls.setup({
         on_attach = on_attach,
@@ -26,5 +27,6 @@ return {
         }
     })
     require'lspconfig'.gopls.setup({})
+    require'lspconfig'.rust_analyzer.setup {}
   end
 }
