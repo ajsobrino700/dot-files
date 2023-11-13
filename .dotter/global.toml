@@ -28,6 +28,7 @@ depends = ["zsh"]
 "nvim/plugins/barbar.lua" = "~/.config/nvim/lua/plugins/barbar.lua"
 "nvim/plugins/indent-blankline.lua" = "~/.config/nvim/lua/plugins/indent-blankline.lua"
 "nvim/plugins/telescope.lua" = "~/.config/nvim/lua/plugins/telescope.lua"
+"nvim/plugins/dashboard.lua" = "~/.config/nvim/lua/plugins/dashboard.lua"
 
 "nvim/plugins/lsp-server.lua" = "~/.config/nvim/lua/plugins/lsp-server.lua"
 "nvim/plugins/lsp-config.lua" = "~/.config/nvim/lua/plugins/lsp-config.lua"
