@@ -29,11 +29,15 @@ function parse_git_branch() {
 }
 
 function git_status(){
-  git status -s 2> /dev/null
+  git status -s 2> /dev/null | sort
 }
 
 function pending_push {
     git diff --stat --cached "origin/${1}" 2> /dev/null
+}
+
+function get_icon {
+    echo "~"
 }
 
 function git_prompt {
@@ -41,10 +45,15 @@ function git_prompt {
     typeset -g status_prompt=""
     if [ -n "${changes}" ]; then
         numbers=$(echo "${changes}" | wc -l)
-        status_prompt="%F{1} ${numbers}"
+        status_prompt=" %F{1}${numbers}"
     fi
 
-    echo "%F{reset_color}on %F{213}\ue0a0 ${1}${status_prompt}"
+    typeset -g push_changes=""
+    if [ -n "$(pending_push $1)" ]; then
+        push_changes=" %F{green}\u2934"
+    fi
+
+    echo "%F{reset_color}on %F{213}\ue0a0 ${1}${status_prompt}${push_changes}"
 }
 
 
