@@ -40,7 +40,7 @@ function git_prompt {
     changes=$(git_status)
     typeset -g status_prompt=""
     if [ -n "${changes}" ]; then
-        numbers=$(echo "${changes}" | wc -l)
+        numbers=$(echo "${changes}" | wc -l | awk '{$1=$1;print}')
         status_prompt=" 💾 %F{1}${numbers}"
     fi
 

@@ -1,10 +1,13 @@
 [user]
-	email = ajsobrino700@gmail.com
-	name = ajsobrino
+email = ajsobrino@izeris.com
+name = ajsobrino
 [pull]
-	rebase = false
+rebase = false
 [init]
-	defaultBranch = main
+defaultBranch = main
 [url "ssh://git@github.com/"]
-  insteadOf = https://github.com/
-
+insteadOf = https://github.com/
+[feature]
+manyFiles = true
+[core]
+fsmonitor = true

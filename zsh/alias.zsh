@@ -7,6 +7,7 @@ alias ls="lsd"
 alias ll="ls -l"
 alias la="ls -la"
 alias cat="bat"
+alias ws="cd ~/workspace"
 
 ## Alias for dottet tool
 alias dot="dotter"
