@@ -1,5 +1,10 @@
 #! /bin/zsh
 
+
+promt_preview(){
+    echo "Tu puta madre"
+}
+
 ## Avaible the command expand in the prompt terminal
 setopt prompt_subst
 
@@ -63,4 +68,4 @@ local first_line='%F{215}%m %F{208}${icon_so} %~ $(branch=$(parse_git_branch); i
 
 PROMPT="$first_line $prompt_newline${second_line}%F{reset_color}"
 
-RPROMPT='%(?.✅.❌) 🕒 %D{%H:%M:%S}'
+RPROMPT='%(?.✅ .❌ ) 🕒 %D{%H:%M:%S}'
