@@ -1,10 +1,5 @@
 #! /bin/zsh
 
-
-promt_preview(){
-    echo "Tu puta madre"
-}
-
 ## Avaible the command expand in the prompt terminal
 setopt prompt_subst
 
@@ -64,7 +59,7 @@ local second_line_well="%F{40}%# %F{77}>%F{156}>%F{230}> "
 
 
 local second_line="%(?.${second_line_well}.${second_line_error})"
-local first_line='%F{215}%m %F{208}${icon_so} %~ $(branch=$(parse_git_branch); if [ -n "${branch}" ]; then git_prompt "${branch}";fi;)'
+local first_line='%F{215}%n %F{208}${icon_so} %~ $(branch=$(parse_git_branch); if [ -n "${branch}" ]; then git_prompt "${branch}";fi;)'
 
 PROMPT="$first_line $prompt_newline${second_line}%F{reset_color}"
 

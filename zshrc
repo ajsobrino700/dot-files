@@ -13,4 +13,7 @@ if [ -f "{{aliasFile}}" ]; then
 fi
 
 
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+
+weatherHere

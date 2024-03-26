@@ -34,3 +34,8 @@ else
     promptinit
     prompt adam1
 fi
+
+autoload -Uz compinit
+compinit
+
+source ~/softwareDevelopment/enhancd/init.sh

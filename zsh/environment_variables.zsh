@@ -1,5 +1,7 @@
 #! /bin/zsh
 
 
-export GO_PATH="${HOME}/go"
-export PATH="${PATH}:${GO_PATH}/bin"
+export PATH="${PATH}:${HOME}/softwareDevelopment/bin"
+
+
+export PASSWORD_STORE_ENABLE_EXTENSIONS=true

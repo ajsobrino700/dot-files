@@ -30,3 +30,6 @@ There is some alias or command that depends of other third party sofware. I list
 - [lsd](https://github.com/lsd-rs/lsd).
 - [bat](https://github.com/sharkdp/bat).
 - [neovim](https://neovim.io/), recently version (It is mandatory to support lua setting).
+- [nerd font](https://lucacorbucci.medium.com/my-iterm2-setup-ed6cb1752f3b#:~:text=In%20the%20iTerm%20Preferences%20go%20to%20Appareance%20-%3E,powerlevel9k%20brew%20tap%20homebrew%2Fcask-fonts%20brew%20cask%20install%20font-hack-nerd-font), this is mandatory to render well the command **lsd**.
+- [zsh syntax highlighting](https://github.com/zsh-users/zsh-syntax-highlighting?tab=readme-ov-file), It is a plugin of zsh.
+- [ansiweather](https://github.com/fcambus/ansiweather).
