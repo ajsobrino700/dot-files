@@ -7,7 +7,6 @@ alias ls="lsd"
 alias ll="ls -l"
 alias la="ls -la"
 alias cat="bat"
-alias ws="cd ~/workspace"
 
 ## Alias for dottet tool
 alias dot="dotter"
@@ -18,6 +17,8 @@ alias nv="nvim"
 alias config="cd ~/.config"
 alias dotfile="cd ~/.dotfiles"
 alias sd="cd ~/softwareDevelopment"
+alias notes="cd ~/softwareDevelopment/notes"
+alias ws="cd ~/workspace"
 
 ## Weather
 alias weather="ansiweather"
