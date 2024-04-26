@@ -44,3 +44,9 @@ depends = ["zsh"]
 
 [git.files]
 "gitconfig" = "~/.gitconfig"
+
+[tmux]
+depends = ["zsh"]
+
+[tmux.files]
+"tmux.conf" = "~/.tmux.conf"
