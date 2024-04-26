@@ -19,25 +19,6 @@ zshrc="~/.zshrc"
 depends = ["zsh"]
 
 [nvim.files]
-"nvim/settings/basic_settings.lua" = "~/.config/nvim/lua/settings/basic_settings.lua"
-"nvim/settings/lazy.lua" = "~/.config/nvim/lua/settings/lazy.lua"
-"nvim/settings/remap.lua" = "~/.config/nvim/lua/settings/remap.lua"
-
-"nvim/plugins/feline.lua" = "~/.config/nvim/lua/plugins/feline.lua" 
-"nvim/plugins/colorscheme.lua" = "~/.config/nvim/lua/plugins/colorscheme.lua"
-"nvim/plugins/barbar.lua" = "~/.config/nvim/lua/plugins/barbar.lua"
-"nvim/plugins/indent-blankline.lua" = "~/.config/nvim/lua/plugins/indent-blankline.lua"
-"nvim/plugins/telescope.lua" = "~/.config/nvim/lua/plugins/telescope.lua"
-"nvim/plugins/dashboard.lua" = "~/.config/nvim/lua/plugins/dashboard.lua"
-
-"nvim/plugins/lsp-server.lua" = "~/.config/nvim/lua/plugins/lsp-server.lua"
-"nvim/plugins/lsp-config.lua" = "~/.config/nvim/lua/plugins/lsp-config.lua"
-"nvim/plugins/nvim-tree.lua" = "~/.config/nvim/lua/plugins/nvim-tree.lua"
-"nvim/plugins/cmp.lua" = "~/.config/nvim/lua/plugins/cmp.lua"
-"nvim/settings/plugins/cmp.lua" = "~/.config/nvim/lua/settings/plugins/cmp.lua"
-
-
-"nvim/init.lua" = "~/.config/nvim/init.lua"
 
 [git]
 depends = ["zsh"]
