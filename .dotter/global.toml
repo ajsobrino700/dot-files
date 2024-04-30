@@ -26,6 +26,12 @@ depends = ["zsh"]
 [git.files]
 "gitconfig" = "~/.gitconfig"
 
+[githook]
+depends = [ "zsh"]
+
+[githook.files]
+"git/hook/prepare-commit-msg"="${HOME}/.config/git/hook/prepare-commit-msg"
+
 [tmux]
 depends = ["zsh"]
 

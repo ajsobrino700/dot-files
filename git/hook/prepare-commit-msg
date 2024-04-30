@@ -1,0 +1,24 @@
+#! /usr/bin/python3
+
+import sys
+import subprocess
+import re
+
+message = ''
+config_message_file = sys.argv[1]
+
+with open(config_message_file, 'r') as f:
+    message = f.read()
+
+branch = subprocess.run("git rev-parse --abbrev-ref HEAD".split(), capture_output=True)
+if branch.returncode != 0:
+    sys.exit("Problem to get the name of branch")
+else:
+    branch = branch.stdout
+match = re.match("^feature\\/(DT\\-\\d+)\\-[\\w\\-\\d]+$", "feature/DT-6865-dynamic-ri")
+
+if match:
+    message= match.group(1) + ": " + message
+
+with open(config_message_file,'w') as f:
+    f.write(message)
