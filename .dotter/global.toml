@@ -24,15 +24,32 @@ depends = ["zsh"]
 "nvim/lua/settings/lazy.lua"="${HOME}/.config/nvim/lua/settings/lazy.lua"
 "nvim/lua/settings/basic.lua"="${HOME}/.config/nvim/lua/settings/basic.lua"
 
-
+# Plugins of Nvim
 "nvim/lua/plugins/telescope.lua"="${HOME}/.config/nvim/lua/plugins/telescope.lua"
 "nvim/lua/plugins/color-scheme.lua"="${HOME}/.config/nvim/lua/plugins/color-scheme.lua"
 "nvim/lua/plugins/nvim-tree.lua"="${HOME}/.config/nvim/lua/plugins/nvim-tree.lua"
 "nvim/lua/plugins/dashboard.lua"="${HOME}/.config/nvim/lua/plugins/dashboard.lua"
 "nvim/lua/plugins/barbar.lua"="${HOME}/.config/nvim/lua/plugins/barbar.lua"
 "nvim/lua/plugins/lualine.lua"="${HOME}/.config/nvim/lua/plugins/lualine.lua"
-"nvim/lua/plugins/trouble.lua"="${HOME}/.config/nvim/lua/plugins/toruble.lua"
+"nvim/lua/plugins/trouble.lua"="${HOME}/.config/nvim/lua/plugins/trouble.lua"
 "nvim/lua/plugins/which-key.lua"="${HOME}/.config/nvim/lua/plugins/which-key.lua"
+"nvim/lua/plugins/cmp.lua"="${HOME}/.config/nvim/lua/plugins/cmp.lua"
+"nvim/lua/plugins/mason.lua"="${HOME}/.config/nvim/lua/plugins/mason.lua"
+"nvim/lua/plugins/luasnip.lua"="${HOME}/.config/nvim/lua/plugins/luasnip.lua"
+"nvim/lua/plugins/lsp-config.lua"="${HOME}/.config/nvim/lua/plugins/lsp-config.lua"
+"nvim/lua/plugins/nvchad-term.lua"="${HOME}/.config/nvim/lua/plugins/nvchad-term.lua"
+"nvim/lua/plugins/none-ls.lua"="${HOME}/.config/nvim/lua/plugins/none-ls.lua"
+"nvim/lua/plugins/debugging.lua"="${HOME}/.config/nvim/lua/plugins/debugging.lua"
+"nvim/lua/plugins/indent-blankline.lua"="${HOME}/.config/nvim/lua/plugins/indent-blankline.lua"
+"nvim/lua/plugins/tree-sitter.lua"="${HOME}/.config/nvim/lua/plugins/tree-sitter.lua"
+
+# Setting of plugins
+"nvim/lua/settings/plugins/cmp.lua"="${HOME}/.config/nvim/lua/settings/plugins/cmp.lua"
+"nvim/lua/settings/plugins/mason.lua"="${HOME}/.config/nvim/lua/settings/plugins/mason.lua"
+"nvim/lua/settings/plugins/luasnip.lua"="${HOME}/.config/nvim/lua/settings/plugins/luasnip.lua"
+"nvim/lua/settings/plugins/lsp-config.lua"="${HOME}/.config/nvim/lua/settings/plugins/lsp-config.lua"
+"nvim/lua/settings/plugins/nvchad-term.lua"="${HOME}/.config/nvim/lua/settings/plugins/nvchad-term.lua"
+"nvim/lua/settings/plugins/none-ls.lua"="${HOME}/.config/nvim/lua/settings/plugins/none-ls.lua"
 
 [git]
 depends = ["zsh"]
