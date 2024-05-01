@@ -26,6 +26,10 @@ depends = ["zsh"]
 
 
 "nvim/lua/plugins/telescope.lua"="${HOME}/.config/nvim/lua/plugins/telescope.lua"
+"nvim/lua/plugins/color-scheme.lua"="${HOME}/.config/nvim/lua/plugins/color-scheme.lua"
+"nvim/lua/plugins/nvim-tree.lua"="${HOME}/.config/nvim/lua/plugins/nvim-tree.lua"
+"nvim/lua/plugins/dashboard.lua"="${HOME}/.config/nvim/lua/plugins/dashboard.lua"
+"nvim/lua/plugins/barbar.lua"="${HOME}/.config/nvim/lua/plugins/barbar.lua"
 
 [git]
 depends = ["zsh"]
