@@ -30,6 +30,9 @@ depends = ["zsh"]
 "nvim/lua/plugins/nvim-tree.lua"="${HOME}/.config/nvim/lua/plugins/nvim-tree.lua"
 "nvim/lua/plugins/dashboard.lua"="${HOME}/.config/nvim/lua/plugins/dashboard.lua"
 "nvim/lua/plugins/barbar.lua"="${HOME}/.config/nvim/lua/plugins/barbar.lua"
+"nvim/lua/plugins/lualine.lua"="${HOME}/.config/nvim/lua/plugins/lualine.lua"
+"nvim/lua/plugins/trouble.lua"="${HOME}/.config/nvim/lua/plugins/toruble.lua"
+"nvim/lua/plugins/which-key.lua"="${HOME}/.config/nvim/lua/plugins/which-key.lua"
 
 [git]
 depends = ["zsh"]
