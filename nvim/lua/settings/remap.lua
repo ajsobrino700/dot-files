@@ -28,7 +28,7 @@ map("n", "<A-9>", "<Cmd>BufferGoto 9<CR>", opts)
 map("n", "<A-0>", "<Cmd>BufferLast<CR>", opts)
 
 -- None ls command
-vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
+vim.keymap.set("n", "<leader>fd", vim.lsp.buf.format, {})
 
 -- Trouble
 local trouble = require("trouble")

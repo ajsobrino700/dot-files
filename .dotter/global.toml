@@ -24,6 +24,9 @@ depends = ["zsh"]
 "nvim/lua/settings/lazy.lua"="${HOME}/.config/nvim/lua/settings/lazy.lua"
 "nvim/lua/settings/basic.lua"="${HOME}/.config/nvim/lua/settings/basic.lua"
 
+
+"nvim/lua/plugins/telescope.lua"="${HOME}/.config/nvim/lua/plugins/telescope.lua"
+
 [git]
 depends = ["zsh"]
 
