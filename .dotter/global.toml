@@ -19,6 +19,10 @@ zshrc="~/.zshrc"
 depends = ["zsh"]
 
 [nvim.files]
+"nvim/init.lua"="${HOME}/.config/nvim/init.lua"
+"nvim/lua/settings/remap.lua"="${HOME}/.config/nvim/lua/settings/remap.lua"
+"nvim/lua/settings/lazy.lua"="${HOME}/.config/nvim/lua/settings/lazy.lua"
+"nvim/lua/settings/basic.lua"="${HOME}/.config/nvim/lua/settings/basic.lua"
 
 [git]
 depends = ["zsh"]
@@ -30,7 +34,7 @@ depends = ["zsh"]
 depends = [ "zsh"]
 
 [githook.files]
-"git/hook/prepare-commit-msg"="${HOME}/.config/git/hook/prepare-commit-msg"
+"git/hook/commit-msg"="${HOME}/.config/git/hook/commit-msg"
 
 [tmux]
 depends = ["zsh"]
