@@ -40,7 +40,7 @@ depends = ["zsh"]
 "nvim/lua/plugins/nvchad-term.lua"="${HOME}/.config/nvim/lua/plugins/nvchad-term.lua"
 "nvim/lua/plugins/none-ls.lua"="${HOME}/.config/nvim/lua/plugins/none-ls.lua"
 "nvim/lua/plugins/debugging.lua"="${HOME}/.config/nvim/lua/plugins/debugging.lua"
-"nvim/lua/plugins/indent-blankline.lua"="${HOME}/.config/nvim/lua/plugins/indent-blankline.lua"
+"nvim/lua/plugins/indent-blankline.lua"="${HOME}/.config/nvim/lua/plugins/indent-blankline.lua"
 "nvim/lua/plugins/tree-sitter.lua"="${HOME}/.config/nvim/lua/plugins/tree-sitter.lua"
 
 # Setting of plugins
