@@ -13,9 +13,8 @@ if [ -f "{{aliasFile}}" ]; then
 fi
 
 
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source "{{ZSH_syntax_highlighting}}"
 
 . "$HOME/.asdf/asdf.sh"
-. "$HOME/.asdf/completions/asdf.bash"
 
 weatherHere
