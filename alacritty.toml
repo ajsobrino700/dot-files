@@ -1,2 +1,6 @@
 [font]
 normal = {family="ComicShannsMonoNerdFontPropo", style="regular"}
+
+[widndow]
+
+padding={x=100, y=0}

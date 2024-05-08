@@ -72,4 +72,4 @@ depends = ["zsh"]
 [alacritty]
 
 [alacritty.files]
-"alacritty.toml"=".config/alacritty/alacritty.toml"
+"alacritty.toml"="${HOME}/.config/alacritty/alacritty.toml"
