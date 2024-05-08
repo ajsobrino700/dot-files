@@ -68,3 +68,8 @@ depends = ["zsh"]
 
 [tmux.files]
 "tmux.conf" = "~/.tmux.conf"
+
+[alacritty]
+
+[alacritty.files]
+"alacritty.toml"=".config/alacritty/alacritty.toml"
