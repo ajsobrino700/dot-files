@@ -8,6 +8,7 @@ return {
 			"lua",
 			"luadoc",
 			"python",
+      "hcl",
 			"vimdoc",
 		},
 		highlight = {

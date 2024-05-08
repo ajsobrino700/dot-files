@@ -3,3 +3,4 @@ nvim/lazy-lock.json
 .dotter/cache.toml
 .dotter/cache
 customDeploy/**
+.dotter/job.toml

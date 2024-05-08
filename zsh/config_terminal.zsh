@@ -39,3 +39,9 @@ autoload -Uz compinit
 compinit
 
 source ~/softwareDevelopment/enhancd/init.sh
+
+source "{{ZSH_syntax_highlighting}}"
+
+. "$HOME/.asdf/asdf.sh"
+
+weatherHere

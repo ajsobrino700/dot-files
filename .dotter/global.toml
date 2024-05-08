@@ -5,14 +5,14 @@ depends = []
 
 [zsh.files]
 "zsh/alias.zsh" = "~/.config/zsh/alias.zsh"
-"zsh/environment_variables.zsh"="~/.config/zsh/environment_variables.zsh"
 "zsh/config_terminal.zsh" = "~/.config/zsh/config_terminal.zsh"
 "zsh/terminal/prompt.zsh" = "~/.config/zsh/terminal/prompt.zsh"
 zshrc="~/.zshrc"
+zenv="~/.zenv"
+zprofile="~/.zprofile"
 
 [zsh.variables]
 "aliasFile"="${HOME}/.config/zsh/alias.zsh"
-"environmentVariablesFile"="${HOME}/.config/zsh/environment_variables.zsh"
 "terminalFile"="${HOME}/.config/zsh/config_terminal.zsh"
 
 [nvim]
