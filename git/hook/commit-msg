@@ -9,14 +9,13 @@ config_message_file = sys.argv[1]
 
 with open(config_message_file, 'r') as f:
     message = f.read()
-
+branch_name=""
 branch = subprocess.run("git rev-parse --abbrev-ref HEAD".split(), capture_output=True)
 if branch.returncode != 0:
     print("Problem to get the name of branch")
-    branch = ""
 else:
-    branch = branch.stdout
-match = re.match("^feature\\/(DT\\-\\d+)\\-[\\w\\-\\d]+$", "feature/DT-6865-dynamic-ri")
+    branch_name = branch.stdout.decode().replace('\n','')
+match = re.match("^feature\\/(DT\\-\\d+)\\-[\\w\\-\\d]+$",branch_name)
 
 if match:
     message= match.group(1) + ": " + message

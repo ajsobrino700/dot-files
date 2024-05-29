@@ -8,7 +8,7 @@ depends = []
 "zsh/config_terminal.zsh" = "~/.config/zsh/config_terminal.zsh"
 "zsh/terminal/prompt.zsh" = "~/.config/zsh/terminal/prompt.zsh"
 zshrc="~/.zshrc"
-zenv="~/.zenv"
+zshenv="~/.zshenv"
 zprofile="~/.zprofile"
 
 [zsh.variables]

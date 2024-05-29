@@ -7,3 +7,5 @@ fi
 if [ -f "{{aliasFile}}" ]; then
     source "{{aliasFile}}"
 fi
+
+weatherHere
