@@ -42,6 +42,9 @@ depends = ["zsh"]
 "nvim/lua/plugins/debugging.lua"="${HOME}/.config/nvim/lua/plugins/debugging.lua"
 "nvim/lua/plugins/indent-blankline.lua"="${HOME}/.config/nvim/lua/plugins/indent-blankline.lua"
 "nvim/lua/plugins/tree-sitter.lua"="${HOME}/.config/nvim/lua/plugins/tree-sitter.lua"
+"nvim/lua/plugins/nvim-colorizer.lua"="${HOME}/.config/nvim/lua/plugins/nvim-colorizer.lua"
+"nvim/lua/plugins/autoclose.lua"="${HOME}/.config/nvim/lua/plugins/autoclose.lua"
+"nvim/lua/plugins/nvim-ts-autotag.lua"="${HOME}/.config/nvim/lua/plugins/nvim-ts-autotag.lua"
 
 # Setting of plugins
 "nvim/lua/settings/plugins/cmp.lua"="${HOME}/.config/nvim/lua/settings/plugins/cmp.lua"
@@ -61,7 +64,9 @@ depends = ["zsh"]
 depends = [ "zsh"]
 
 [githook.files]
-"git/hook/commit-msg"="${HOME}/.config/git/hook/commit-msg"
+"git/hook/commit-msg.py"="${HOME}/.config/git/hook/commit-msg"
+"git/hook/pre-push.zsh"="${HOME}/.config/git/hook/pre-push"
+"git/hook/check-makefile.py"="${HOME}/.config/git/hook/check-makefile.py"
 
 [tmux]
 depends = ["zsh"]

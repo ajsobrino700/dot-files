@@ -7,10 +7,12 @@ return {
 		ensure_installed = {
 			"lua",
 			"luadoc",
+			"markdown",
 			"python",
-      "hcl",
+			"hcl",
 			"vimdoc",
-      "html"
+			"html",
+			"css",
 		},
 		highlight = {
 			enable = true,
