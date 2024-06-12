@@ -13,6 +13,8 @@ return {
 			"vimdoc",
 			"html",
 			"css",
+      "typescript",
+      "javascript"
 		},
 		highlight = {
 			enable = true,

@@ -7,14 +7,14 @@ wo.rnu = true
 vim.g.mapleader = " "
 
 -- Tab settings
-local bo = vim.bo
+local opt = vim.opt
 local TAB_SIZE = 2
 
-bo.tabstop = TAB_SIZE
-bo.shiftwidth = TAB_SIZE
-bo.softtabstop = TAB_SIZE
-bo.expandtab = true
-bo.autoindent = true
+opt.tabstop = TAB_SIZE
+opt.shiftwidth = TAB_SIZE
+opt.softtabstop = TAB_SIZE
+opt.expandtab = true
+vim.bo.autoindent = true
 
 -- Remove swap
 vim.opt.backup = false
