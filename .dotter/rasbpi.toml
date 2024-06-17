@@ -9,3 +9,6 @@ depends = []
 alias dk="docker"
 alias dkc="docker compose"
 """}
+
+[zsh.variables]
+"ZSH_syntax_highlighting"="/home/ajsobrino/softwareDevelopment/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
