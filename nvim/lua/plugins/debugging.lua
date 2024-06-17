@@ -7,6 +7,8 @@ return {
   config = function()
     local dap, dapui = require("dap"), require("dapui")
 
+    dapui.setup()
+
     vim.keymap.set("n", "<leader>dt", dap.toggle_breakpoint, {})
     vim.keymap.set("n", "<leader>dc", dap.continue, {})
 
