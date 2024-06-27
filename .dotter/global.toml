@@ -48,6 +48,7 @@ depends = ["zsh"]
 "nvim/lua/plugins/nvim-ts-autotag.lua"="${HOME}/.config/nvim/lua/plugins/nvim-ts-autotag.lua"
 "nvim/lua/plugins/refactoring.lua"="${HOME}/.config/nvim/lua/plugins/refactoring.lua"
 "nvim/lua/plugins/nvim-dap-python.lua"="${HOME}/.config/nvim/lua/plugins/nvim-dap-python.lua"
+"nvim/lua/plugins/notify.lua"="${HOME}/.config/nvim/lua/plugins/notify.lua"
 
 # Setting of plugins
 "nvim/lua/settings/plugins/cmp.lua"="${HOME}/.config/nvim/lua/settings/plugins/cmp.lua"

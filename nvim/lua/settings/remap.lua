@@ -3,7 +3,7 @@ local opts = { noremap = true, silent = true }
 
 map("n", "<C-s>", "<Cmd>write<CR>", opts)
 map("n", "<C-q>", "<Cmd>qall!<CR>", opts)
-map('t',"<Esc>","[[<C-\\><C-n>]]",opts)
+map('t', "<Esc>", "[[<C-\\><C-n>]]", opts)
 
 -- nvim-tree command
 map("n", "<C-a>", "<Cmd>NvimTreeToggle<CR>", opts)
@@ -46,9 +46,9 @@ vim.keymap.set("n", "<C-h>", function() vim.lsp.buf.hover() end)
 
 -- refactoring
 vim.keymap.set(
-    {"n", "x"},
-    "<leader>rr",
-    function() require('refactoring').select_refactor() end
+  { "n", "x" },
+  "<leader>rr",
+  function() require('refactoring').select_refactor() end
 )
 
 vim.keymap.set("x", "<leader>re", function() require('refactoring').refactor('Extract Function') end)
@@ -63,4 +63,8 @@ vim.keymap.set({ "n", "x" }, "<leader>ri", function() require('refactoring').ref
 
 vim.keymap.set("n", "<leader>rb", function() require('refactoring').refactor('Extract Block') end)
 vim.keymap.set("n", "<leader>rbf", function() require('refactoring').refactor('Extract Block To File') end)
--- Extract block supports only normal mode
+
+-- Clean notification
+vim.keymap.set('', '<leader>c', function()
+  vim.notify.dismiss()
+end, { silent = true })
