@@ -12,6 +12,33 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 
 function M.setup()
+  ----------------- CSS ------------------------
+
+  lspconfig.cssls.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = { "css" },
+  })
+
+  ----------------------------------------------
+  ----------------- Docker ---------------------
+
+  lspconfig.dockerls.setup({
+    settings = {
+      docker = {
+        languageserver = {
+          formatter = {
+            ignoreMultilineInstructions = true,
+          },
+        },
+      },
+    },
+  })
+
+  lspconfig.docker_compose_language_service.setup({})
+
+  ---------------------------------------
+  ------------- Lua ---------------------
   lspconfig.lua_ls.setup({
     on_attach = on_attach,
     settings = {
@@ -20,8 +47,19 @@ function M.setup()
         workspace = { checkThirdParty = false },
       },
     },
-    filetypes = { "lua" }
+    filetypes = { "lua" },
   })
+
+  ----------------------------------------
+  ------------ MARKDOWN ------------------
+  --
+  lspconfig.marksman.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+  })
+
+  ------------------------------
+  ------------- Python -------------------
 
   lspconfig.pyright.setup({
     on_attach = on_attach,
@@ -64,31 +102,9 @@ function M.setup()
   lspconfig.tsserver.setup({
     filetypes = {
       "javascript",
-      "typescript"
-    }
+      "typescript",
+    },
   })
-
-  lspconfig.cssls.setup({
-    on_attach = on_attach,
-    capabilities = capabilities,
-    filetypes = { "css" }
-  })
-
-  lspconfig.dockerls.setup{
-    settings = {
-      docker ={
-        languageserver ={
-          formatter = {
-            ignoreMultilineInstructions = true,
-          }
-        }
-      }
-    }
-  }
-
-  lspconfig.docker_compose_language_service.setup{
-  }
-
 end
 
 return M
