@@ -14,7 +14,8 @@ return {
 			"html",
 			"css",
       "typescript",
-      "javascript"
+      "javascript",
+      "yaml",
 		},
 		highlight = {
 			enable = true,

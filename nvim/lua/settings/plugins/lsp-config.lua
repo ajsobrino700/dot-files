@@ -67,11 +67,28 @@ function M.setup()
       "typescript"
     }
   })
+
   lspconfig.cssls.setup({
     on_attach = on_attach,
     capabilities = capabilities,
     filetypes = { "css" }
   })
+
+  lspconfig.dockerls.setup{
+    settings = {
+      docker ={
+        languageserver ={
+          formatter = {
+            ignoreMultilineInstructions = true,
+          }
+        }
+      }
+    }
+  }
+
+  lspconfig.docker_compose_language_service.setup{
+  }
+
 end
 
 return M

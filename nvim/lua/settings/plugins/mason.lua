@@ -22,6 +22,9 @@ function M.setup()
       -- Typescript
       "tsserver",
       -- prettier
+      -- Docker
+      "docker_compose_language_service",
+      "dockerls"
 		},
 	})
 end

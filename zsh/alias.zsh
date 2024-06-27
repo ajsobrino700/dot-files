@@ -23,3 +23,5 @@ alias ws="cd ~/workspace"
 ## Weather
 alias weather="ansiweather"
 alias weatherHere="weather -l Almagro -H true -d true -s true"
+
+alias k="kubectl"
