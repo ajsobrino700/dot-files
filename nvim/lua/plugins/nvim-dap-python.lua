@@ -1,6 +1,7 @@
 return {
-  'mfussenegger/nvim-dap-python',
+  "mfussenegger/nvim-dap-python",
   config = function()
     require("dap-python").setup("python")
-  end
+    require("dap").set_log_level("TRACE")
+  end,
 }
