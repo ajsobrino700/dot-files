@@ -1,17 +1,21 @@
 local override_filetype_docker = function()
-  local file_name = vim.fn.expand("%")
-  if file_name:match("docker%-compose%.yaml$") == 'docker-compose.yaml'
-      or file_name:match("docker%-compose%.yaml$") == 'docker-compose.yml' then
-    vim.cmd(":set filetype=yaml.docker-compose")
-  end
+	local file_name = vim.fn.expand("%")
+	if
+		file_name:match("docker%-compose%.yaml$") == "docker-compose.yaml"
+		or file_name:match("docker%-compose%.yaml$") == "docker-compose.yml"
+	then
+		vim.cmd(":set filetype=yaml.docker-compose")
+	end
 end
 
 vim.api.nvim_create_autocmd("BufEnter", {
-  callback = override_filetype_docker
+	callback = override_filetype_docker,
 })
 
 vim.api.nvim_create_autocmd("BufWritePre", {
-  callback = function()
-    vim.lsp.buf.format()
-  end
+	callback = function()
+		if vim.bo.filetype ~= "yaml" then
+			vim.lsp.buf.format()
+		end
+	end,
 })

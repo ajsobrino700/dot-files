@@ -3,7 +3,7 @@ return {
   main = "ibl",
   opts = {},
   lazy = true,
-  ft = { "yaml", "yml", "python" },
+  ft = { "yaml", "yml", "python", "json" },
   config = function()
     local highlight = {
       "RainbowRed",
