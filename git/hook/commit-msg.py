@@ -15,7 +15,7 @@ if branch.returncode != 0:
     print("Problem to get the name of branch")
 else:
     branch_name = branch.stdout.decode().replace("\n", "")
-match = re.match("^(feature|bugfix)\\/(DT\\-\\d+)\\-[\\w\\-\\d]+$", branch_name)
+match = re.match("^(feature|bugfix|hotfix)\\/(DT\\-\\d+)\\-[\\w\\-\\d]+$", branch_name)
 
 if match:
     message = match.group(2) + ": " + message
