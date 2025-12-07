@@ -13,6 +13,8 @@ function M.setup()
 			null_ls.builtins.formatting.black,
 			-- markdown
 			null_ls.builtins.diagnostics.markdownlint,
+			-- sql
+			null_ls.builtins.formatting.sql_formatter,
 		},
 	})
 end

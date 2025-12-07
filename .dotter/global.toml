@@ -70,8 +70,8 @@ depends = [ "zsh"]
 
 [githook.files]
 "git/hook/commit-msg.py"="${HOME}/.config/git/hook/commit-msg"
-"git/hook/pre-push.zsh"="${HOME}/.config/git/hook/pre-push"
-"git/hook/check-makefile.py"="${HOME}/.config/git/hook/check-makefile.py"
+#"git/hook/pre-push.zsh"="${HOME}/.config/git/hook/pre-push"
+#"git/hook/check-makefile.py"="${HOME}/.config/git/hook/check-makefile.py"
 
 [tmux]
 depends = ["zsh"]
